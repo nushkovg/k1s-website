@@ -27,7 +27,7 @@ Add your user to the `docker` group and log-off/log-on from your X session, rebo
 sudo usermod -aG docker $USER
 ```
 
-### Clone K1S
+### Clone k1s
 
 ```bash
 git clone git@github.com:nushkovg/k1s.git

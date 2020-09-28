@@ -1,10 +1,6 @@
 # k1s
 
-> Lightweight k8s home lab cluster for Raspberry PIs.
-
-## What is k1s
-
-The K1S Platform contains all services required to start a k3d cluster on a Raspberry PI with Skaffold. It is meant for those who want to create their own home lab cluster with a lightweight Kubernetes release with a preloaded ingress controller and several monitoring tools. Since k1s is in the early stage of development, it currently allows only [Namesilo](https://www.namesilo.com/) as the DNS provider.
+> The k1s platform contains all services required to start a k3d cluster on a Raspberry PI with Skaffold. It is meant for those who want to create their own home lab cluster with a lightweight Kubernetes release with a preloaded ingress controller and several monitoring tools. Since k1s is in the early stage of development, it currently allows only [Namesilo](https://www.namesilo.com/) as the DNS provider.
 
 ## Guide
 

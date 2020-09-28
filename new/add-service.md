@@ -34,7 +34,7 @@ In the `./infrastructure/k1s-example` directory, create a `Chart.yaml` file with
 name: k1s-example
 version: 0.0.1
 platform: k1s
-description: K1S Example Helm Chart
+description: k1s Example Helm Chart
 
 ```
 
@@ -50,7 +50,7 @@ For example, add a new section like this at the bottom of the file:
 
 ```yaml
 ###############################
-## K1S Example Configuration ##
+## k1s Example Configuration ##
 ###############################
 
 example:
@@ -133,7 +133,7 @@ In `skaffold.yaml`, add the following sections:
 
 In case your service has a UI, you can create a new DNS record for the subdomain as a CNAME, just like the other subdomains.
 
-### Adding the Service to K1S Dashboard
+### Adding the Service to k1s Dashboard
 
 If you'd like to add your own service to the k1s dashboard, you need to edit the `./platform/k1s-ui/data/links.yml` file and optionally add a logo. Here are the steps:
 

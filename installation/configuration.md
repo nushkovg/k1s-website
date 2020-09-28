@@ -2,7 +2,7 @@
 
 Before finally running the platform, you need to configure the correct values in several files.
 
-## K1S Dashboard
+## k1s Dashboard
 
 k1s comes with a preloaded dashboard which is in fact, a submodule located in the `./platform` directory, as the other submodules. You just need to set your domain in its configuration.
 
@@ -31,7 +31,7 @@ Since k1s is using Helm, the configuration is done in a values YAML file. It is 
 
 The keys which need configuration are marked with a `# CONFIGURE ME` comment. To configure the values, open `./infrastructure/helm-values.yaml` and set the following values, and make sure you copy/paste them as written in the Value column:
 
-### K1S UI
+### k1s UI
 
 | Key             | Value                | Description                  |
 |-----------------|----------------------|------------------------------|

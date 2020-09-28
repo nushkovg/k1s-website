@@ -2,7 +2,7 @@
 
 k1s provides you with several dashboards which you can access via your domain and subdomains. This section explains how to access them.
 
-## K1S Dashboard
+## k1s Dashboard
 
 Just visit your main domain. For example: `https://example.com`.
 
@@ -40,7 +40,7 @@ kubepi platform init
 
 ## Getting the Platform URL
 
-To get the main URL of the platform, which is the K1S Dashboard, you can run:
+To get the main URL of the platform, which is the k1s Dashboard, you can run:
 
 ```bash
 kubepi platform info
