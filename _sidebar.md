@@ -2,6 +2,7 @@
 
   - [Domain Setup](getting-started/dns.md)
   - [SSH Access](getting-started/ssh.md)
+  - [Container Features](getting-started/containers.md)
   - [Install Dependencies](getting-started/deps.md)
   - [Install KubePI](getting-started/kubepi.md)
 
