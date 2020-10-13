@@ -1,6 +1,6 @@
 # Adding New Services
 
-The platform is made with extensibility in mind, so that you can add your own services without too much hassle. This section explains how to do it.
+The platform is made with extensibility in mind, so that you can add your own services without too much hassle. This section explains how to do it. You can also check out the [example service](https://github.com/nushkovg/k1s-example) and its `infrastructure` directory for additional guidance if you are new to Kubernetes and Helm.
 
 > **_NOTE:_** You will probably need some knowledge about creating Kubernetes manifests and using Helm before adding a new service.
 
@@ -24,7 +24,7 @@ To begin, create a new directory in the `./platform` directory. For example, cre
 
 After using either the submodules or the local way of adding a service, you need to create the infrastructure manifests and initialize a new Helm Chart.
 
-As the first step, create a new directory in `./infrastructure` with the same name as the directory for the service, for example `./infrastructure/k1s-example`.
+As the first step, create a new directory in `./infrastructure` with the same name as the directory for the service, for example `./infrastructure/k1s-example`. As previously mentioned, check out the [example service](https://github.com/nushkovg/k1s-example) and its `infrastructure` directory for additional guidance.
 
 ### Creating the Chart
 
@@ -49,21 +49,28 @@ After doing this, you should transform the manifests into Helm templates. To do 
 For example, add a new section like this at the bottom of the file:
 
 ```yaml
-###############################
-## k1s Example Configuration ##
-###############################
+###################################
+## Example Service Configuration ##
+###################################
 
 example:
   name: example
   namespace: k1s
   replicas: 1
 
-  ports:
-    port: 443
-    targetPort: 8443
-    protocol: TCP
+  service:
+    type: ClusterIP
+
+    ports:
+      name: http
+      port: 3060
   
   image: # set automatically in skaffold
+  pullPolicy: IfNotPresent
+
+  ingress:
+    entrypoint: websecure
+    rule: Host(`example-service.example.com`)
 ```
 
 Whatever you do, **DO NOT** add the image name manually. Skaffold does this for you since it's building it itself.
