@@ -1,6 +1,6 @@
 ![logo](_media/logo.svg)
 
-# k1s <span style="font-size:1.5rem">v1.0.2</span>
+# k1s <span style="font-size:1.5rem">v1.0.3</span>
 
 > Lightweight k8s home lab cluster for Raspberry PIs.
 

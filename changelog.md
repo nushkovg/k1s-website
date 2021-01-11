@@ -1,5 +1,11 @@
 # Changelog
 
+## [v1.0.3](https://github.com/nushkovg/k1s/compare/v1.0.2...v1.0.3) (2021-01-11)
+
+### Features
+
+* Updated version of the Kubernetes Dashboard. ([8f757](https://github.com/nushkovg/k1s/commit/8f757905684f580f5afcd55d620266cbe3e45b83))
+
 ## [v1.0.2](https://github.com/nushkovg/k1s/compare/v1.0.1...v1.0.2) (2020-09-26)
 
 ### Features
